@@ -5,61 +5,264 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">  
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <ul class="site-nav">
-            <li class="nav-item">home</li>
-            <li class="nav-item">car wrapping</li>
-            <li class="nav-item">car detailing</li>
-            <li class="nav-item">gallery of works</li>
-        </ul>
+        <div class="container">
+            <ul class="site-nav">
+                <li class="nav-item"><a class="site-nav-link" href="#">home</a></li>
+                <li class="nav-item"><a class="site-nav-link" href="#">car wrapping</a></li>
+                <li class="nav-item"><a class="site-nav-link" href="#">car detailing</a></li>
+                <li class="nav-item"><a class="site-nav-link" href="#">gallery of works</a></li>
+            </ul>
+        </div>
+       
     </header>
 
     <main>
         <section class="hero">
-            <h1 class="hero-tittle">CAR MUSC</h1>
+            <div class="container">
+                <h1 class="hero-tittle">CAR MUSC</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                  Vitae orci urna amet penatibus.</p>
 
-            <button type="button" class="button-hero">order service</button>
+            <button type="button" class="button-hero">Order Service</button>
+            </div>
 
         </section>
 
         <section class="contacts">
-            <h2>our contacts</h2>
-            <div class="contacts-address">
-                <h3>our address</h3>
-                <p>Lorem ipsum dolor sit amet</p>
+         <div class="container">
+                <h2 class="visually-hidden">our contacts</h2>
+            <div class="contacts-list">
+                <div class="contacts-address">
+                    <h3>Our address:</h3>
+                    <p class="adress">Khreshchatyk street 27A Kyiv</p>
+                </div>
+    
+                <div class="contacts-tel">
+                    <h3>Telephone numbers:</h3>
+                    <ul>
+                        <li><a class="telephone" href="tel:+380681234455">+380681234455</a></li>
+                        <li><a class="telephone" href="tel:+380506677890">+380506677890</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contacts-time">
+                    <h3>Working hours:</h3>
+                    <ul>
+                        <li class="hours">Mon-Fri : 10:00 - 20:00</li>
+                        <li class="hours">Sat-Sun : 12:00 - 20:00</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="contacts-tel">
-                <h3>telephone numbers</h3>
-                <ul>
-                    <li>+380961111111</li>
-                    <li>+380501111111</li>
-                </ul>
-            </div>
-
-            <div class="contacts-time">
-                <h3>working hours</h3>
-                <ul>
-                    <li>Mon-Fri : 10:00 - 20:00</li>
-                    <li>Sat-Sun : 12:00 - 20:00</li>
-                </ul>
-            </div>
+         </div>
+            
         </section>
 
         <section class="progress">
-            <h2>our achievements from the Ukrainian Cup to the World Championships</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales.
-                 Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at.
-                 Sed viverra nulla nam arcu, non iaculis pretium, volutpat. </p>
+            <div class="container">
+                <div class="progress-info">
+                    <h2 class="progress-tittle">From the Ukrainian Cup to the World Championships</h2>
+                    <p class="progress-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales.
+                     Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at.
+                    Sed viverra nulla nam arcu, non iaculis pretium, volutpat. 
+                    </p>
+                </div>
+
+                <div class="progress-image">
+                <img class="pro-image-1" src="./images/progress-img.jpg" alt="" width="500px">
+                <img class="pro-image-2" src="./images/progress-img2.jpg" alt="" width="500px">
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="our-pro">
+            <div class="container">
+                <h2 class="our-pro-tittle">Our projects</h2>
+
+            <ul class="our-pro-list">
+
+                <li class="pro-image">
+                    <img class="our-pro-img" src="./images/pro1.jpg" alt="" width="360px">
+                    <div class="pro-thumb">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                    </div>
+                </li>
+
+                <li class="pro-image">
+                    <img class="our-pro-img" src="./images/pro2.jpg" alt="" width="360px">
+                    <div class="pro-thumb">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                    </div>
+                </li>
+
+                <li class="pro-image">
+                    <img class="our-pro-img" src="./images/pro3.jpg" alt="" width="360px">
+                    <div class="pro-thumb">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                    </div>
+                </li>
+
+               
+            </ul>
+            </div>
+            
+
+        </section>
+
+        <section class="our-tools">
+            <div class="container">
+                <h2 class="our-tools-tittle">Our tools</h2>
+
+            <div class="tools-box">
+                <ul class="our-tools-list">
+                    <li class="our-tools-item">
+                        <svg width="56px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-tools-1" width="56px" height="70px"></use>
+                        </svg>
+                        <h3 class="tools-tittle">materials from best company</h3>
+                        
+                    </li>
+    
+                    <li class="our-tools-item">
+                        <svg width="70px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-tools-2" width="70px" height="70px"></use>
+                        </svg>
+                        <h3 class="tools-tittle">Experienced craftsmen</h3>
+                        
+                    </li>
+                        
+    
+                    <li class="our-tools-item">
+                        <svg width="70px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-tools-3" width="70px" height="70px"></use>
+                        </svg>
+                        <h3 class="tools-tittle">Warranty for all types of work</h3>
+                        
+                    </li>
+    
+                </ul>
+    
+                <div class="tools-image">
+                    <img src="./images/tools-image.jpg" alt="" width="550px">
+                </div>
+            </div>
+            </div>
+            
+
+        </section>
+
+        <section class="our-services">
+            <div class="container">
+                <h2 class="our-service-tittle">Our services</h2>
+
+            <div class="service-button-box">
+                <button class="service-button" type="button">pasting</button>
+                <button class="service-button" type="button">detailing</button>
+            </div>
+
+            <ul class="service-list">
+                <li class="service-item">
+                    <a href="#">
+                        <svg width="70px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-service-1" width="70px" height="70px"></use>
+                        </svg>
+                        <h3>Protective films</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                        
+                    </a>
+                    <button class="button-service-item" type="button">more</button>
+                    
+                </li>
+                <li class="service-item">
+                    <a href="#">
+                        <svg width="56px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-service-2" width="56px" height="70px"></use>
+                        </svg>
+                        <h3>Color films</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                        
+                    </a>
+                    <button class="button-service-item" type="button">more</button>
+                    
+                </li>
+                <li class="service-item">
+                    <a href="#">
+                        <svg width="70px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-service-3" width="70px" height="70px"></use>
+                        </svg>
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                        
+                    </a>
+                    <button class="button-service-item" type="button">more</button>
+                    
+                </li>
+                <li class="service-item">
+                    <a href="#">
+                        <svg width="70px" height="70px">
+                            <use href="./images/symbol-defs.svg#icon-service-4" width="70px" height="70px"></use>
+                        </svg>
+                        <h3>Salon pasting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                        
+                    </a>
+                    <button class="button-service-item" type="button">more</button>
+                    
+                </li>
+            </ul>
+            </div>
+            
+
+        </section>
+
+        <section class="gallery-of-works">
+            <div class="container">
+                <h2 class="gallery-tittle">Gallery of works</h2>
+                <div class="gallery-box">
+                    <ul class="gallery-list">
+                        <li class="gallery-item"><img src="./images/gallery1.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery2.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery3.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery4.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery5.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery6.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery7.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery8.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery9.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery10.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery11.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery12.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery13.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery14.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery15.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery16.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery17.jpg" alt="" width="180px" height="150px"></li>
+                        <li class="gallery-item"><img src="./images/gallery18.jpg" alt="" width="180px" height="150px"></li>
+                    </ul>
+                    
+                </div>
+            </div>
+
         </section>
 
 
 
     </main>
+
+    <footer>
+        <div class="container">
+                <p class="footer-text-end">
+             2023 © My first project. From Sweden to Ukraine.
+                </p>
+        </div>
+    </footer>
 </body>
 </html>
